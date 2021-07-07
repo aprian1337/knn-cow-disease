@@ -1,3 +1,5 @@
+package com.aidiagnoses;
+
 public class Database {
 
     private final String[] diagnose = {

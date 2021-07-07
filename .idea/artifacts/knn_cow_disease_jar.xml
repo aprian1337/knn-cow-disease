@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="knn-cow-disease:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/knn_cow_disease_jar</output-path>
+    <root id="archive" name="knn-cow-disease.jar">
+      <element id="module-output" name="knn-cow-disease" />
+    </root>
+  </artifact>
+</component>

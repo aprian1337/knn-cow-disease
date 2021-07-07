@@ -1,3 +1,5 @@
+package com.aidiagnoses;
+
 import java.text.DecimalFormat;
 
 public class Calculation {
@@ -13,7 +15,7 @@ public class Calculation {
         diseases = db.getDatabaseDisease();
     }
 
-    public String startCalculation(){
+    public String rankWithString(){
         double absoluteA;
         double [] absoluteB;
         int [] multiply;
@@ -25,6 +27,20 @@ public class Calculation {
         result = resultCalculation(absoluteA, absoluteB, multiply);
         rank = defineRank(result);
         return diagnoses[rank];
+    }
+
+    public int rankOnlyIndex(){
+        double absoluteA;
+        double [] absoluteB;
+        int [] multiply;
+        double[] result;
+        int rank;
+        absoluteA = absoluteA();
+        absoluteB = absoluteB();
+        multiply = multiply();
+        result = resultCalculation(absoluteA, absoluteB, multiply);
+        rank = defineRank(result);
+        return rank;
     }
 
     public static double absoluteA(){
